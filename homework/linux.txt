@@ -10,7 +10,9 @@
   128  mv copy.txt backup/
   129  wc -l < processes.txt > selected.txt
   130  cat processes.txt | grep /bin
-  131  cat processes.txt | grep /bin >> selected.txt
+  131  grep -n "/bin" processes.txt >> selected.txt
   132  history | tail --lines=25
   133  history | tail --lines=11
   134  history | tail --lines=12 > commands.txt
+
+
