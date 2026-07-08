@@ -13,6 +13,7 @@
   131  grep -n "/bin" processes.txt >> selected.txt
   132  history | tail --lines=25
   133  history | tail --lines=11
-  134  history | tail --lines=12 > commands.txt
+  134  history | tail -10 > commands.txt
+  135  cat selected.txt commands.txt
 
 
